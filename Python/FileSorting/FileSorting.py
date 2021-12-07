@@ -3,9 +3,9 @@
 @author: luiggi33
 """
 
-#importing os to get the files
+# importing os to get the files
 import os
-#importing shutil to move files
+# importing shutil to move files
 import shutil
 
 # Select the Path you want to Sort it to

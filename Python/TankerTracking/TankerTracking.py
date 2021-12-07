@@ -1,9 +1,10 @@
 import requests
+import config
 
 postalCode = input("Postleitzahl: ")
 option = input("1 für billigste Tankstelle, 2 für alle Tankstellen: ")
-apiKey = "5b9253c7-e25c-8c1d-4af0-5cd954f77ffe"
-url = "https://creativecommons.tankerkoenig.de/api/v4/stations/postalcode?apikey=" + apiKey + "&postalcode=" + postalCode
+url = "https://creativecommons.tankerkoenig.de/api/v4/stations/postalcode?apikey=" + \
+    config.apiKey + "&postalcode=" + postalCode
 
 if postalCode == None:
     print("Please enter a postal code.")

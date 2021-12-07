@@ -8,10 +8,10 @@ import os
 # importing shutil to move files
 import shutil
 
-# Select the Path you want to Sort it to
-outputpath = 'Path/To/Sort/It/To'
 # Select the Path from where to Sort
-inputpath = 'From/Where/To/Sort'
+inputpath = input("Select the Path from where to Sort: ")
+# Select the Path you want to Sort it to
+outputpath = input("Select the Path you want to Sort it to: ")
 
 # List all Things in the input dir
 list_ = os.listdir(inputpath)
